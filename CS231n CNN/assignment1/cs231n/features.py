@@ -1,3 +1,5 @@
+from __future__ import print_function
+
 import matplotlib
 import numpy as np
 from scipy.ndimage import uniform_filter
@@ -41,7 +43,7 @@ def extract_features(imgs, feature_fns, verbose=False):
   imgs_features[0] = np.hstack(first_image_features).T
 
   # Extract features for the rest of the images.
-  for i in np.arange(1, num_images):
+  for i in range(1, num_images):
     idx = 0
     for feature_fn, feature_dim in zip(feature_fns, feature_dims):
       next_idx = idx + feature_dim
@@ -88,7 +90,7 @@ def hog_feature(im):
   if im.ndim == 3:
     image = rgb2gray(im)
   else:
-    image = np.atleast_2d(im)
+    image = np.at_least_2d(im)
 
   sx, sy = image.shape # image size
   orientations = 9 # number of gradient bins
