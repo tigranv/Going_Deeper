@@ -4,7 +4,6 @@ from random import shuffle
 def svm_loss_naive(W, X, y, reg):
   """
   Structured SVM loss function, naive implementation (with loops).
-
   Inputs have dimension D, there are C classes, and we operate on minibatches
   of N examples.
 
