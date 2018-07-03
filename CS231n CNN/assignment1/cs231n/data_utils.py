@@ -74,6 +74,7 @@ def get_CIFAR10_data(num_training=49000, num_validation=1000, num_test=1000,
     X_val = X_val.transpose(0, 3, 1, 2).copy()
     X_test = X_test.transpose(0, 3, 1, 2).copy()
 
+
     # Package data into a dictionary
     return {
       'X_train': X_train, 'y_train': y_train,
