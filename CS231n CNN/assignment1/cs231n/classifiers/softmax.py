@@ -9,6 +9,7 @@ def softmax_loss_naive(W, X, y, reg):
   of N examples.
 
   Inputs:
+  
   - W: A numpy array of shape (D, C) containing weights.
   - X: A numpy array of shape (N, D) containing a minibatch of data.
   - y: A numpy array of shape (N,) containing training labels; y[i] = c means
