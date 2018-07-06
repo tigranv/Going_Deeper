@@ -127,6 +127,7 @@ def color_histogram_hsv(im, nbin=10, xmin=0, xmax=255, normalized=True):
   Compute color histogram for an image using hue.
 
   Inputs:
+   - 
   - im: H x W x C array of pixel data for an RGB image.
   - nbin: Number of histogram bins. (default: 10)
   - xmin: Minimum pixel value (default: 0)
