@@ -88,7 +88,6 @@ def load_tiny_imagenet(path, dtype=np.float32, subtract_mean=True):
   Load TinyImageNet. Each of TinyImageNet-100-A, TinyImageNet-100-B, and
   TinyImageNet-200 have the same directory structure, so this can be used
   to load any of them.
-
   Inputs:
   - path: String giving path to the directory to load.
   - dtype: numpy datatype used to load the data.
